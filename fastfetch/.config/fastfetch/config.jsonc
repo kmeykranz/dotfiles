@@ -1,0 +1,61 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "small"
+  },
+  "display": {
+    "separator": "",
+    "key": {
+      "width": 15
+    }
+  },
+  "modules": [
+    {
+      // draw borders first to make colors of left and right border consistant
+      "key": " user",
+      "type": "title",
+      "format": "{user-name}",
+      "keyColor": "31"
+    },
+    {
+      "key": "󰅐 uptime",
+      "type": "uptime",
+      "keyColor": "33"
+    },
+    {
+      "key": "{icon} distro",
+      "type": "os",
+      "keyColor": "34"
+    },
+    {
+      "key": "󰍛 cpu",
+      "type": "cpu",
+      "showPeCoreCount": true,
+      "keyColor": "33"
+    },
+    {
+      "key": "󰉉 disk",
+      "type": "disk",
+      "format": "{size-used} / {size-total} [{size-percentage}]",
+      "folders": "/",
+      "keyColor": "34"
+    },
+    {
+      "key": " memory",
+      "type": "memory",
+      "keyColor": "35"
+    },
+    {
+      "key": "󰩟 network",
+      "type": "localip",
+      "format": "{ipv4} ({ifname})",
+      "keyColor": "36"
+    },
+    {
+      "key": " colors",
+      "type": "colors",
+      "symbol": "circle",
+      "keyColor": "39"
+    }
+  ]
+}
