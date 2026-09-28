@@ -11,3 +11,4 @@
 - tmux (terminal multiplexer)
 - aerospace (macos window manager)
 - fastfetch
+- stow (dotfile manager)
