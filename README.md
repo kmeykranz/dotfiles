@@ -16,4 +16,3 @@
 - opencode (terminal ai)
 - karabiner (shortcut keys binding)
 - zed (code editor)
-

@@ -1,8 +1,6 @@
 # ── 字体 ─────────────────────────────
 font-family = "Mono Nerd Font"
 font-size = 16
-font-feature = +calt
-font-feature = +liga
 font-thicken = true
 
 # ── 光标 ─────────────────────────────
@@ -13,7 +11,7 @@ cursor-style-blink = true
 # theme = Dracula
 
 # ── 背景透明度 ───────────────────────
-background-opacity = 0.8
+background-opacity = 0.9
 background-blur = 20
 
 # ── 滚动 ─────────────────────────────
@@ -48,21 +46,4 @@ shell-integration-features = cursor,sudo,title
 # ── 其他 ─────────────────────────────
 confirm-close-surface = true
 quit-after-last-window-closed = false
-
-
-# Cmd → Ctrl 透传给TUI程序 (Mac优化)
-keybind = cmd+a=text:\x01
-keybind = cmd+c=text:\x03
-keybind = cmd+d=text:\x04
-keybind = cmd+e=text:\x05
-keybind = cmd+f=text:\x06
-keybind = cmd+k=text:\x0b
-keybind = cmd+n=text:\x0e
-keybind = cmd+o=text:\x0f
-keybind = cmd+p=text:\x10
-keybind = cmd+q=text:\x11
-keybind = cmd+s=text:\x13
-keybind = cmd+u=text:\x15
-keybind = cmd+v=text:\x16
-keybind = cmd+y=text:\x19
-keybind = cmd+z=text:\x1a
+macos-option-as-alt = true
