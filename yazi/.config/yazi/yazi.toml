@@ -31,9 +31,10 @@ ueberzug_offset = [ 0, 0, 0, 0 ]
 
 [opener]
 edit = [
-	# { run = "${EDITOR:-vi} %s", desc = "$EDITOR",      for = "unix", block = true },
+	# { run = "${EDITOR:-vi} %s", desc = w"$EDITOR",      for = "unix", block = true },
+	{ run = "hx %s", desc = "helix",      for = "unix", block = true },
 	{ run = "zed %s", desc = "zed",      for = "unix", orphan = true },
-	{ run = "zed --wait %s", desc = "zed (block)",      for = "unix", block = true },
+	# { run = "zed --wait %s", desc = "zed (block)",      for = "unix", block = true },
 	{ run = "code %s",          desc = "code",         for = "windows", orphan = true },
 	{ run = "code -w %s",       desc = "code (block)", for = "windows", block = true },
 ]

@@ -1,39 +1,18 @@
 {
   "$schema": "https://opencode.ai/config.json",
-
-  "theme": "opencode",
-  "autoupdate": true,
-  "share": "disabled",
-
   "provider": {
     "deepseek": {
       "npm": "@ai-sdk/openai-compatible",
       "name": "DeepSeek",
       "options": {
-        "baseURL": "https://api.deepseek.com/v1",
-        "apiKey": "{env:DEEPSEEK_API_KEY}"
+        "baseURL": "https://api.deepseek.com/v1"
       },
       "models": {
-        "deepseek-v4-flash": {
-          "name": "DeepSeek V4 Flash"
-        },
-        "deepseek-v4-pro": {
-          "name": "DeepSeek V4 Pro"
-        },
-        "deepseek-reasoner": {
-          "name": "DeepSeek Reasoner"
-        }
+        "deepseek-flash": { "name": "DeepSeek Flash" },
+        "deepseek-v4-pro": { "name": "DeepSeek V4 Pro" },
+        "deepseek-reasoner": { "name": "DeepSeek Reasoner" }
       }
     }
   },
-
-  "model": "deepseek/deepseek-v4-flash",
-  "small_model": "deepseek/deepseek-v4-flash",
-
-  "agent": {
-    "build": { "model": "deepseek/deepseek-v4-flash" },
-    "plan":  { "model": "deepseek/deepseek-v4-pro" }
-  },
-
-  "instructions": ["AGENTS.md"]
+  "model": "deepseek/deepseek-flash"
 }

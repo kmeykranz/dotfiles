@@ -9,6 +9,7 @@ prepend_keymap = [
 	{ on = "S", run = 'shell "$SHELL" --block --confirm', desc = "open shell" },
 	{ on = "l", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
 	{ on = "<Right>", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
+	{ on = "<C-g>", run = "shell --confirm --block lazygit", desc = "Lazygit" },
 ]
 
 keymap = [
